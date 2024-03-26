@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header,footer{
+    background-color: skyblue;
+    border-bottom: 2px solid gray;
+}
+
+header .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#botao {
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.menu li{
+    float: left;
+    list-style: none;
+    padding: 16px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu li:hover {
+    border-top: 4px solid black;
+}
+
+.container-flex {
+    display: flex;
+    margin-top: 30px;
+}
+
+.flex h2,p {
+    margin-left: 20px;
+}
+
+.flex h2{
+    border-bottom: 3px solid gray;
+    margin-bottom: 40px;
+}
+
+.flex p{
+    margin-top: 10px;
+    font-size: 1.5em;
+    color:rgb(8, 177, 244);
+}
+
+#foto {
+    height: 280px;
+}
+
+.titulo>h2 {
+    border-bottom: 3px solid gray;
+    margin-top: 80px;
+}
+
+ul{
+    list-style: none;
+}
+
+.produto li{
+    max-width: 30%;
+    margin: 0 2%;
+}
+
+.produto li p {
+    font-size: 15px;
+    color: rgb(8, 177, 244);
+}
+
+.produto li img {
+    height: 200px;
+}
+
+.produto li button {
+    border: none;
+    background-color: skyblue;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 7px;
+    font-weight: bolder;
+    width: 100%;
+}
+
+#preço {
+    font-size: larger;
+    font-style: italic;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 12px;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    .container-flex {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+        display: block;
+    }
+
+    .produto li {
+        max-width: 100%;
+    }
+
+    .produto li img {
+        height: 400px;
+    }
+
+    .produto li h3,p {
+        text-align: center;
+    }
+}
+
+@media  screen and (min-width:768px) and (max-width: 1032px) {
+    .container {
+        max-width: 90%;
+        display: block;
+    }
+
+    .produto{
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+    }
+
+    .produto li img {
+        width: 100%;
+        height: auto;
+    }
+
+    #nintendo {
+        height: 170px;
+        margin-top: 15px;
+    }
+}
